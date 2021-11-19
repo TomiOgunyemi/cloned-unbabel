@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Navbar Classwork</title>
+    
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style type="text/css">
+        .navbar{
+            height: 70px;
+            box-shadow: 0px 0px 6px; color: blue;
+        }
+        
+        .menubar{
+            display: none;
+        }
+        .x-img{
+            display: inline-block;
+        }
+        .x-container{
+            column-count: 4;
+        }
+        
+        /* @media(max-width: 768px)
+        {
+         .toggle{
+             display: none;
+         }
+         .menubar{
+             display: inherit;
+         }
+        } */
+        .t-img{
+            display: inline-block;
+            margin: 5px;
+        }
+        .t-container{
+            column-count: 4; 
+        }
+        @media(max-width: 600px){
+            .x-container{
+                column-count: 2;
+            }
+        }
+        @media(max-width: 600px){
+            .t-container{
+                column-count: 2;
+            }
+        }     
+ </style>
+</head>
+  <body>
+      <nav class="navbar bg-primary navbar-expand-md sticky-top">
+          <a href="" class="navbar-brand">
+              <img src="images\unbabel-logo.svg" alt="" width="100px" height="50px"> 
+          </a>
+          <button class="navbar-toggler text-white" data-toggle="collapse" data-target="#tomi">
+            Menu
+          </button>
+         <div class="collapse navbar-collapse justify-content-end" id="tomi">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="#" class="text-light nav-link"> Product</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class= "text-light nav-link"> Resources</a>
+
+            </li>
+            <li class="nav-item">
+                <a href="#" class="text-light nav-link">Login</a>
+            </li>
+                <a href="#" class="nav-link btn btn-outline-light font-weight-bold" style=" border-radius: 40px;"> Request a Demo</a>
+            </ul>
+        </div>
+     </nav>
+     <main class="container-fluid border-bottom">
+         <main class="row">
+             <section class="col-sm-6 bg-primary">
+                <div class="p-sm-5">
+                   <h1 class="display-4  text-light font-weight-bold" > Build better customer relationships by speaking their language</h1>
+                   <h3 class="text-light"> Combining the efficiency and speed of AI translation with human translator quality, 
+                    our end-to-end translation product makes enterprise-level translations seamless.</h3>
+                </div>
+                <a href="#" class=" btn btn-outline-light font-weight-bold" style="border-radius: 30px;width: 35%; margin: 20px;"> Learn about our product</a>
+            </section>
+             <section class="col-sm-6 bg-primary">
+                 <img  class="img-fluid" src="images/unbabel.png" alt="" style="border-radius: 20px; margin: 15% 0px">
+l            </section>
+        </main>
+     </main>
+     
+     <main class="container-fluid pt-5 bg-primary">
+         <section class="row"> 
+         <div class="col-sm-3 bg-primary text-light text-center" >
+             <img src="images/babel1.svg">
+             <h3>Operational Efficiency</h3>
+            <h5> Get comprehensive, cost-effective multilingual coverage that doesn’t cost a fortune.</h5>
+         </div>
+         <div class="col-sm-3 bg-primary text-light text-center" >
+            <img src="images/babel2.svg">
+            <h3>Total Scalability</h3>
+            <h5> Scale up or down to manage periods of spikes or high volumes with ease.</h5>
+        </div>
+         <div class="col-sm-3 bg-primary text-light text-center" >
+             <img src="images/babel3.svg">
+             <h3>Customized Solutions</h3>
+            <h5> Ensure product-specific lingo doesn’t get lost in translation by combining your brand guidelines with our platform.</h5>
+         </div>
+         <div class="col-sm-2 bg-primary text-light text-center" >
+            <img src="images/babel4.svg">
+            <h3>Improve CSAT Scores</h3>
+           <h5>Boost your customer experience and improve KPIs with fast multilingual support.</h5>
+        </div>
+     </section>
+     </main>
+     <br>
+     <main>
+         <div class="p-2">
+             <h1 class="text-center text-primary">Trusted by top enterprise brands around <br>the world</h1>
+         </div>
+         <div class="x-container container p-5">
+             <div class="x-img">
+                 <img src="images/p1.svg" width="150px"> 
+             </div>
+             <div class="x-img">
+                <img src="images/p2.svg" width="150px"> 
+             </div>
+             <div class="x-img">
+                <img src="images/p3.svg" width="150px"> 
+             </div>
+             <div class="x-img">
+                 <img src="images/p4.svg" width="150px"> 
+            </div>
+            <div class="x-img">
+                 <img src="images/p5.svg" width="150px"> 
+            </div>
+            <div class="x-img">
+                 <img src="images/p6.svg" width="150px"> 
+            </div>
+            <div class="x-img">
+                 <img src="images/p7.svg" width="150px"> 
+            </div>
+            <div class="x-img">
+                 <img src="images/p8.svg" width="150px"> 
+            </div>
+         </div>
+     </main>
+     <main class="container-fluid">
+         <section class="row">
+             <div class="col-sm-6 bg-primary p-5" >
+                 <h1 class="text-light font-weight-bold ml-5">Manage all your customer service language operations
+                    in one place</h1>
+                 <p class="text-light ml-5">The Unbabel Portal gives you an overview of your subscription usage and data on average words translated, volume, and translation quality analysis per language, so you can leverage these insights to optimize your customers’ experience over time.
+                     See the Portal</p>
+                  <a href="" class=" btn btn-outline-light font-weight-bold" style="border-radius: 40px; width: 150px; height:10%;">See the portal</a>
+             </div>
+             <div class="col-sm-6 bg-primary float-right">
+                 <img src="images/customer-service.png" style="height: 500px; width: 500px;">
+             </div>
+ </section>
+  </main>
+     <main class="">
+        <section class="bg-primary pt-5" >
+            <div class="p-3">
+                <h3 class="text-center font-weight-bold display-4 text-light"> Keep your workflow as it is, just <br> give it a boost</h3>
+                <p class="text-center text-light">We empower your agents to do their best work without changing a thing.
+                   Add the power of<br> translation to the tools you already use, such as CRMs and chat platforms. And for everything<br> else, 
+                  you can use our APIs to build custom integrations. No assembly required.
+                </p>
+             </div>
+            
+        <div class="t-container container p-3">
+            <div>
+                <div class="card t-img" style="width: 230px; height: 150px;">
+                    <img class="card-img " src="images/helpshift.svg" alt="" style="width: 150px;">
+                    <div class="card-body text-center">
+                        <a href="#">learn more</a>
+                    </div>
+                </div> 
+                <div class="card t-img" style="width: 230px; height: 150px;">
+                    <img class="card-img p-5" src="images/zendesk.svg" alt="" style="width: 60%;">
+                    <div class="card-body text-center">
+                        <a href="#">learn more</a>
+                    </div>
+                </div> 
+                <div class="card t-img" style="width: 230px; height: 150px;">
+                    <img class="card-img" src="images/microsoft-dyna.svg" alt="" style="width: 150px;">
+                    <div class="card-body text-center">
+                        <a href="#">learn more</a>
+                    </div>
+                </div> 
+                <div class="card t-img" style="width: 230px; height: 150px;">
+                    <img class="card-img" src="images/kustomer.svg" alt="" style="width: 150px;">
+                    <div class="card-body text-center">
+                        <a href="#">learn more</a>
+                    </div>
+                </div> 
+            </div>
+            <div>
+                <div class="card t-img" style="width: 230px; height: 150px;">
+                    <img class="card-img" src="images/microsoft-dynamics-365.svg" alt="" style="width: 150px;">
+                    <div class="card-body text-center">
+                        <a href="#">learn more</a>
+                    </div>
+                </div> 
+                <div class="card t-img" style="width: 230px; height: 150px;">
+                    <img class="card-img" src="images/intercom.svg" alt="" style="width: 150px;">
+                    <div class="card-body text-center">
+                        <a href="#">learn more</a>
+                    </div>
+                </div> 
+                <div class="card t-img" style="width: 230px; height: 150px;">
+                    <img class="card-img" src="images/Freshdesk.svg" alt="" style="width: 150px;">
+                    <div class="card-body text-center">
+                        <a href="#">learn more</a>
+                    </div>
+                </div> 
+                <div class="card t-img" style="width: 230px; height: 150px;">
+                    <img class="card-img" src="images/salesforce.svg" alt="" style="width: 150px;">
+                    <div class="card-body text-center">
+                        <a href="#">learn more</a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+ </section>
+  </main>
+  <main class="container-fluid bg-primary text-light border-bottom">
+      <section class="row p-5">
+         <div class="col-sm"> 
+                  <p class="font-weight-bold">Product</p>
+                  <p>Product overview</p>
+                  <ul class="p-2">
+                      <li>Portal</li>
+                      <li>Tickets</li>
+                      <li>chat</li>
+                      <li>FAQs</li>
+                  </ul>
+              </div>
+            <div class="col-sm">
+                <p class="font-weight-bold">Our Approach</p>
+                <p>Tech</p>
+                <p>Fintech</p>
+                <p>Gaming</p>
+                <p>Retail</p>
+                <p>Travel</p>
+                <p>Translation quality</p>
+                <p>Translation speed</p>
+            </div>
+            <div class="col-sm">
+                <p class="font-weight-bold">Integrations</p>
+                <p>Salesforce</p> 
+                <p>Zendesk</p>
+                <p>Kustomer</p>
+                <p>Intercom</p>
+                <p>Zoho</p>
+                <p>View All</p>
+                <p>API</p>
+            </div>
+            <div class="col-sm">
+                <p class="font-weight-bold">Library</p>
+                <p>Resources</p> 
+                <p>Events</p>
+                <p>Customer Centric</p>
+                <p>Understanding with Unbabel</p>
+                <p>Customer Support</p>
+            </div>
+            <div class="col-sm">
+                <p class="font-weight-bold">Company</p>
+                <p>Careers</p> 
+                <p>About us</p>
+                <p>Press & Media</p>
+                <p>Partnerships</p>
+                <p>Research</p>
+                <p>Contact</p>
+                <p>API</p>
+            </div>
+            <div class="col-sm">
+                <p class="font-weight-bold">Community</p>
+                <p>Community Support</p> 
+                <p>Translators</p>
+                <ul class="pl-2">
+                    <li>Editors</li>
+                    <li>Pro</li>
+                </ul>
+                <p>Login</p>
+               
+            </div>
+   </section>
+
+ </main> 
+ <footer class=" bg-primary d-flex justify-content-between ">
+      <ul class="nav">
+          <li class="nav-item">
+              <span class="nav-link text-light"> @2021 Unbabel Inc.</span>
+          </li>
+          <li class="nav-item">
+              <a href="" class="nav-link text-light"> Terms and Condition</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link text-light"> Cookie Policy</a>
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link text-light"> Privacy Policy</a>
+        </li>
+    </ul>
+        <ul class="nav">
+        <li class="nav-item">
+            <a href="" class="nav-link"> </a>
+            <i class=" fa fa-facebook text-light"></i>
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link"> </a>
+            <i class=" fa fa-twitter text-light"></i>
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link"> </a>
+            <i class=" fa fa-instagram text-light"></i>
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link"> </a>
+            <i class=" fa fa-linkedin text-light"></i>
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link"> </a>
+            <i class=" fa fa-whatsapp text-light"></i>
+        </li>
+     </ul>
+
+ </footer>
+         
+
+        
+        
+        
+        
+        
+       
+
+        
+      
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
